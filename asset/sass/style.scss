@@ -1,0 +1,1201 @@
+@import 'import/reset.scss';
+@import 'import/_color.scss';
+
+
+.c_btn{
+   outline: none;
+   border: none;
+   background-color: $mainColor;
+   color: #fff;
+   width: 220px;
+   height: 47px;
+   line-height: 47px;
+   font-weight: 600;
+   font-size: 15px;
+   text-align: center;
+   border-radius: 10px;
+   transition: 0.4s;
+   display: inline-block;
+   &:hover{
+      background-color: $hover;
+      box-shadow: 0px 23px 46px rgba(0,0,0,0.1);
+      transform: translateY(-1px);
+   }
+}
+.nice-select{
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   height: 40px;
+   line-height: 40px;
+   .current{
+      font-weight: 600;
+      font-size: 16px;
+      color: $titleColor;
+   }
+   .list{
+      width: 100%;
+      box-shadow: 0px 23px 46px rgba(0,0,0,0.1);
+      font-weight: 600;
+      border-radius: 0px !important;
+      li{
+         font-weight: 600;
+         font-size: 13px;
+         color: $titleColor;
+         background-color: #fff;
+         border-radius: 0px !important;
+         position: relative;
+         &::after{
+            height: 0%;
+            width: 3px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            content: "";
+            position: absolute;
+            background: $mainColor;
+            transition: 0.4s;
+            margin: auto;
+         }
+         &:hover{
+            background-color: $mainColor;
+            color: #fff;
+         }
+      }
+      li.selected{
+         font-weight: 800;
+         background-color: #fff !important;
+         color: $titleColor;
+         &::after{
+            height: 70%;
+         }
+      }
+   }
+}
+
+.label_info{
+   font-size: 10px;
+   color: $titleColor;
+   margin-top: 8px;
+   span{
+      font-weight: 600;
+   }
+}
+.asRange {
+   position: relative;
+   width: 100%;
+   height: 8px;
+   background-color: #fff;
+   border-radius: 30px;
+   cursor: pointer;
+}
+.asRange .asRange-selected{
+   background-color: #DDDFEF;
+   height: 8px;
+}
+.asRange .asRange-pointer:after{
+   display: none;
+}
+.asRange .asRange-pointer::before{
+   background-color: $mainColor;
+   // top: -3px;
+}
+
+
+
+
+
+/*------------------------
+main code start here 
+-------------------------*/
+
+
+
+//investment_calculator
+#investment_calculator{
+   padding-top: 50px;
+   background: #fff;
+   .top_title{
+      h3{
+         font-size: 24px;
+         font-weight: 600;
+      }
+   }
+   .calculator_form{
+      padding: 25px 30px;
+      background: $tbg;
+      border-radius: 10px;
+      margin-top: 20px;
+      .form_input{
+         label{
+            font-size: 16px;
+            color: $titleColor;
+            display: block;
+            margin-bottom: 7px;
+         }
+         input{
+            width: 100%;
+            height: 40px;
+            border: none;
+            background: #fff;
+            border-radius: 5px;
+            padding: 0px 20px;
+            font-weight: 600;
+            font-size: 16px;
+         }
+      }
+   }
+   .calculator_submit{
+      margin-top: 20px;
+   }
+   .form_calculate_result{
+      margin-top: 20px;
+      background-color: $tbg;
+      padding: 15px 0px;
+      border-radius: 10px;
+      h3{
+         font-weight: 600;
+         font-size: 15px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         span{
+            font-size: 20px;
+            color: $mainColor;
+            margin-left: 7px;
+         }
+      }
+   }
+}
+
+//investment_calculator_result_box
+#investment_calculator_result_box{
+   padding: 20px 0px;
+   background: #fff;
+   .investment_calculator_result_container{
+      background-color: $tbg;
+      padding: 25px 30px;
+      border-radius: 7px;
+      .investment_calculator_groth_overtime{
+         .title{
+            h3{
+               font-size: 20px;
+               font-weight: 600;
+            }
+         }
+         .groth_chart{
+            margin-top: 30px;
+            #groth_chat_canvas{
+               height: 400px;
+               
+            }
+         }
+      }
+      .balance_at_year{
+         .title{
+            text-align: center;
+            h3{
+               font-size: 20px;
+               font-weight: 600;
+            }
+         }
+         #balance_at_year_canvas{
+            margin-top: 30px;
+            height: 250px;
+         }
+      }
+      .balance_at_year_chart_legend{
+         ul{
+            margin-top: 30px;
+            li{
+               margin-bottom: 10px;
+               font-size: 15px;
+               font-weight: 500;
+               .dot{
+                  display: inline-block;
+                  height: 12px;
+                  width: 12px;
+                  background-color: #5862AD;
+                  border-radius: 50%;
+                  margin-right: 5px;
+                  position: relative;
+                  top: 0px;
+               }
+               .dot2{
+                  background-color: #848CC3;
+               }
+               .dot3{
+                  background-color: #C9CDE5;
+               }
+               .ammount{
+                  display: block;
+                  float: right;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+//invesment_cal_result_table
+#invesment_cal_result_table{
+   padding: 0px 0px 30px 0px;
+   background: #fff;
+   .invesment_cal_result_table_container{
+      background-color: $tbg;
+      border-radius: 7px;
+      .table>thead {
+         vertical-align: middle !important;
+      }
+      .table>:not(:last-child)>:last-child>*{
+         border-color: transparent;
+      }
+      thead{
+         tr{
+            th{
+               font-weight: 500;
+               font-size: 15px;
+               line-height: 23px;
+            }
+         }
+         &::after{
+            height: 15px;
+            width: 100%;
+            content: "";
+            display: block;
+         }
+      }
+      thead{
+         th{
+            padding: 13px 20px !important;
+            font-size: 15px;
+         }
+      }
+      tbody{
+         td{
+            padding: 13px 20px !important;
+            font-size: 15px;
+         }
+         tr:last-child{
+            border-color: transparent;
+         }
+      }
+   }
+}
+
+//savings_calculator
+#savings_calculator{
+   padding: 50px 0px;
+   background: #fff;
+   .top_title{
+      h3{
+         font-size: 24px;
+         font-weight: 600;
+      }
+   }
+   .savings_calculator_wrapper{
+      margin-top: 30px;
+      background: $tbg;
+      padding: 30px 30px 60px 30px;
+      border-radius: 7px;
+      .savings_calculator_left{
+         .info_box{
+            p{
+               font-size: 14px;
+               color: $titleColor;
+               width: 100%;
+            }
+            h4{
+               font-weight: 600;
+               font-size: 18px;
+               margin-top: 10px;
+            }
+         }
+         .savings_calculator_form_area{
+            margin-top: 20px;
+            .form_input_box{
+               margin-bottom: 15px;
+               label{
+                  font-size: 14px;
+                  color: $titleColor;
+                  display: block;
+                  margin-bottom: 10px;
+               }
+               input{
+                  width: 100%;
+                  display: block;
+                  border: none;
+                  background-color: #fff;
+                  border-radius: 5px;
+                  padding: 0px 15px;
+                  height: 40px;
+                  line-height: 40px;
+                  font-weight: 600;
+                  color: $titleColor;
+                  font-size: 15px;
+               }
+               .nice-select{
+                  .current{
+                     font-size: 15px;
+                  }
+               }
+               .asRange{
+                  margin-top: 20px;
+               }
+            }
+            :last-child{
+               margin-bottom: 0px;
+            }
+            .submit_action{
+               margin-top: 30px;
+               button{
+                  width: 100%;
+               }
+            }
+         }
+      }
+      .savings_calculator_chart_area{
+         .top_title{
+            h4{
+               font-weight: 500;
+               font-size: 18px;
+               color: $titleColor;
+            }
+            h3{
+               margin-top: 10px;
+               font-size: 24px;
+               color: $mainColor;
+               font-weight: 500;
+            }
+         }
+         .main_chart_box{
+            margin-top: 40px;
+            #saving_chat_canvas{
+               width: 80% !important;
+               margin: 0 auto;
+               height: 320px;
+            }
+         }
+         .char_savvings_legend{
+            width: 77%;
+            margin: 0 auto;
+            margin-top: 0px;
+            .top_title{
+               h4{
+                  font-weight: 600;
+                  font-size: 16px;
+               }
+            }
+            .saving_chart_info_container{
+               margin-top: 15px;
+               display: flex;
+               justify-content: space-between;
+               .infor_box{
+                  p{
+                     font-size: 13px;
+                  }
+                  h5{
+                     font-weight: 600;
+                     font-size: 16px;
+                     margin-top: 8px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+//credit_card_payoff_calculator
+#credit_card_payoff_calculator{
+   padding: 50px 0px;
+   background: #fff;
+   .top_title{
+      h3{
+        font-weight: 600;
+        font-size: 24px; 
+      }
+      p{
+         font-size: 15px;
+         width: 80%;
+         margin-top: 15px;
+      }
+   }
+   .credit_cla_main_wrapper{
+      margin-top: 30px;
+      .left_box{
+         background-color: $tbg;
+         padding: 30px 20px;
+         border-radius: 7px;
+         width: 90%;
+         .credit_form_box{
+            .credit_form_item{
+               margin-bottom: 15px;
+               label{
+                  font-size: 15px;
+                  color: $titleColor;
+                  display: block;
+                  margin-bottom: 8px;
+               }
+               input{
+                  width: 100%;
+                  border: none;
+                  font-weight: 600;
+                  font-size: 15px;
+                  color: $titleColor;
+                  padding: 0px 15px;
+                  height: 40px;
+                  line-height: 40px;
+                  border-radius: 5px;
+               }
+            }
+            .devider_or{
+               margin-bottom: 10px;
+               p{
+                  font-weight: 500;
+                  color: $titleColor;
+               }
+            }
+            .credit_form_action{
+               margin-top: 20px;
+               button{
+                  width: 100%;
+                  height: 50px;
+                  line-height: 50px;
+               }
+            }
+         }
+      }
+      .right_box{
+         border: 1px solid #ddd;
+         padding: 50px 50px;
+         border-radius: 7px;
+         padding-bottom: 100px;
+         .credit_result_top{
+            .credit_result_top_left{
+               h3{
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: $titleColor;
+               }
+               ul{
+                  margin-top: 20px;
+                  li{
+                     display: block;
+                     font-size: 15px;
+                     color: $titleColor;
+                     margin-bottom: 15px;
+                     span{
+                        display: block;
+                        float: right;
+                        font-weight: 600;
+                     }
+                  }
+                  :last-child{
+                     margin-bottom: 0px;
+                  }
+                  .devider{
+                     height: 1px;
+                     width: 100%;
+                     background-color: #ddd;
+                  }
+               }
+            }
+            .credit_result_top_right{
+               padding-left: 60px;
+               .item_box{
+                  p{
+                     font-size: 15px;
+                     color: $titleColor;
+                  }
+                  h3{
+                     font-weight: 600;
+                     color: $mainColor;
+                     font-size: 37px;
+                     margin-top: 10px;
+                  }
+               }
+            }
+         }
+         .credit_result_intest_progress{
+            margin-top: 60px;
+            .progress_bar{
+               width: 100%;
+               height: 12px;
+               background-color: #fff;
+               position: relative;
+               .progress_fill_1{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background-color: $mainColor;
+                  height: 100%;
+                  p{
+                     position: absolute;
+                     top: -35px;
+                     left: 0;
+                     font-weight: 500;
+                     font-size: 15px;
+                     span{
+                        font-weight: 600;
+                     }
+                  }
+               }
+               .progress_fill_2{
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  background-color: #AAAFD5;
+                  height: 100%;
+                  border-left: 10px solid #fff;
+                  p{
+                     position: absolute;
+                     top: -35px;
+                     right: 0;
+                     font-weight: 500;
+                     font-size: 15px;
+                     width: max-content;
+                     span{
+                        font-weight: 600;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+//personal_loan_calculator
+#personal_loan_calculator{
+   padding: 50px 0px;
+   background: #fff;
+   .top_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px; 
+       }
+       p{
+          font-size: 15px;
+          margin-top: 10px;
+       }
+   }
+   .personal_loan_wrapper{
+      margin-top: 30px;
+      .personal_loan_left_form{
+         background: $tbg;
+         padding: 20px;
+         border-radius: 7px;
+         .form_heading{
+            margin-bottom: 15px;
+            h4{
+               font-weight: 600;
+               font-size: 18px;
+            }
+         }
+         .form_input_box{
+            margin-bottom: 15px;
+            label{
+               font-size: 15px;
+               margin-bottom: 8px;
+            }
+            input{
+               width: 100%;
+               background-color: #fff;
+               border: none;
+               border-radius: 5px;
+               height: 40px;
+               padding: 0px 15px;
+               font-weight: 600;
+               font-size: 15px;
+               color: $titleColor;
+            }
+            .nice-select{
+               margin-bottom: 10px;
+               .current{
+                  font-size: 15px;
+               }
+            }
+         }
+         :last-child{
+            margin-bottom: 0px;
+         }
+         .personal_loan_form_action{
+            margin-top: 20px;
+            button{
+               width: 100%;
+            }
+         }
+      }
+      .personal_loan_result_box{
+         border: 1px solid #ddd;
+         padding: 40px 50px;
+         border-radius: 7px;
+         width: 90%;
+         margin: 0 auto;
+         .credit_result_top{
+            .credit_result_top_left{
+               h3{
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: $titleColor;
+               }
+               ul{
+                  margin-top: 20px;
+                  li{
+                     display: block;
+                     font-size: 15px;
+                     color: $titleColor;
+                     margin-bottom: 15px;
+                     span{
+                        display: block;
+                        float: right;
+                        font-weight: 600;
+                     }
+                  }
+                  :last-child{
+                     margin-bottom: 0px;
+                  }
+                  .devider{
+                     height: 1px;
+                     width: 100%;
+                     background-color: #ddd;
+                  }
+               }
+            }
+            .credit_result_top_right{
+               padding-left: 60px;
+               .item_box{
+                  p{
+                     font-size: 15px;
+                     color: $titleColor;
+                  }
+                  h3{
+                     font-weight: 600;
+                     color: $mainColor;
+                     font-size: 37px;
+                     margin-top: 10px;
+                  }
+               }
+            }
+         }
+         .personal_loan_result_link{
+            margin-top: 30px;
+            a{
+               color: $mainColor;
+               font-weight: 500;
+               font-size: 14px;
+               &:hover{
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+      .personal_loan_result_table{
+         border: 1px solid #ddd;
+         padding: 40px 50px 10px 50px;
+         border-radius: 7px;
+         width: 90%;
+         margin: 0 auto;
+         margin-top: 30px;
+         .top_area_info{
+            .date_filter{
+               h4{
+                  font-weight: 500;
+                  font-size: 18px;
+               }
+               input{
+                  width: 70%;
+                  border: 1px solid #ddd;
+                  background-color: #fff;
+                  height: 40px;
+                  line-height: 40px;
+                  border-radius: 5px;
+                  padding: 0px 15px;
+                  font-weight: 500;
+                  font-size: 15px;
+                  margin-top: 15px;
+               }
+            }
+            .date_filter_info_right{
+               h4{
+                  font-size: 17px;
+                  font-weight: 500;
+               }
+               h3{
+                  margin-top: 10px;
+                  color: $mainColor;
+                  font-weight: 600;
+                  font-size: 24px;
+               }
+            }
+         }
+         .main_table_area{
+            margin-top: 30px;
+            .table>thead {
+               vertical-align: middle !important;
+            }
+            .table>:not(:last-child)>:last-child>*{
+               border-color: #ddd;
+            }
+            thead{
+               tr{
+                  th{
+                     font-weight: 500;
+                     font-size: 15px;
+                     line-height: 23px;
+                  }
+               }
+            }
+            thead{
+               th{
+                  padding: 10px 0px !important;
+                  font-size: 15px;
+               }
+            }
+            tbody{
+               td{
+                  padding: 10px 0px !important;
+                  font-size: 14px;
+                  font-weight: 500;
+               }
+               tr:last-child{
+                  border-color: transparent;
+               }
+            }
+         }
+      }
+   }
+}
+
+//debt_to_income_ratio_calculator
+#debt_to_income_ratio_calculator{
+   padding: 50px 0px;
+   background: #fff;
+   .top_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px;
+      }
+   }
+   .deb_in_ratio_wrapper{
+      margin-top: 30px;
+      .deb_in_ratio_left_form{
+         background-color: $tbg;
+         padding: 50px 30px;
+         border-radius: 7px;
+         .form_input_box{
+            margin-bottom: 15px;
+            label{
+               font-size: 14px;
+               color: $titleColor;
+               display: block;
+               margin-bottom: 8px;
+            }
+            input{
+               width: 100%;
+               border: none;
+               height: 40px;
+               line-height: 40px;
+               border-radius: 5px;
+               color: $titleColor;
+               font-weight: 600;
+               font-size: 15px;
+               padding: 0px 15px;
+            }
+         }
+         .form_submit_action{
+            margin-top: 20px;
+            button{
+               width: 100%;
+            }
+         }
+         :last-child{
+            margin-bottom: 0px;
+         }
+      }
+      .deb_in_ratio_result_box{
+         width: 90%;
+         margin: 0 auto;
+         border: 1px solid #ddd;
+         text-align: center;
+         height: 100%;
+         border-radius: 7px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         vertical-align: middle;
+         justify-content: center;
+         p{
+            font-size: 16px;
+            color: $titleColor
+         }
+         h3{
+            font-size: 40px;
+            font-weight: 600;
+            color: $mainColor;
+            margin-top: 14px;
+         }
+      }
+   }
+}
+
+
+//compund_interst_calculator
+#compund_interst_calculator{
+   padding: 50px 0px;
+   background-color: #fff;
+   .top_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px; 
+       }
+       p{
+         font-size: 15px;
+         margin-top: 10px;
+       }
+   }
+   .compund_interst_wrapper{
+      margin-top: 30px;
+      .compund_interst_form_area{
+         background-color: $tbg;
+         padding: 30px;
+         border-radius: 7px;
+         h3{
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 15px;
+         }
+         .form_input_box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            .label_box{
+               label{
+                  font-size: 14px;
+                  color: $titleColor;
+               }
+            }
+            .input_box{
+               input{
+                  width: 175px;
+                  height: 40px;
+                  border: none;
+                  background-color: #fff;
+                  font-weight: 600;
+                  font-size: 13px;
+                  padding: 0px 15px;
+                  border-radius: 5px;
+               }
+               .nice-select{
+                  width: 175px;
+                  .current{
+                     font-size: 12px;
+                     font-weight: 600;
+                  }
+               }
+            }
+         }
+         :last-child{
+            margin-bottom: 0px;
+         }
+         .compound_interest_form_action{
+            margin-top: 30px;
+            button{
+               width: 75%;
+            }
+         }
+      }
+      .compund_interst_result_box{
+         width: 85%;
+         margin: 0 auto;
+         .balance_by_year{
+            .top_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 17px;
+                  color: $titleColor;
+               }
+            }
+            .main_canvas_box{
+               margin-top: 30px;
+               #balance_year_compound{
+                  height: 350px;
+               }
+            }
+         }
+         .result_summary{
+            margin-top: 40px;
+            .top_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 17px;
+                  color: $titleColor;
+               }
+            }
+            .result_summary_box{
+               margin-top: 25px;
+               background-color: $tbg;
+               border-radius: 7px;
+               padding: 50px 30px;
+               ul{
+                  li{
+                     text-align: right;
+                     margin-bottom: 15px;
+                     font-size: 15px;
+                     span{
+                        display: inline-block;
+                        width: 40%;
+                        float: right;
+                        text-align: left;
+                        margin-left: 40px;
+                        font-weight: 500;
+                     }
+                  }
+               }
+            }
+         }
+         .savings_balance_box{
+            margin-top: 30px;
+            .top_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 17px;
+                  color: $titleColor;
+               }
+            }
+            .savings_balance_table_box{
+               margin-top: 25px;
+               background-color: $tbg;
+               border-radius: 7px;
+               .table{
+                  border-radius: 15px;
+                  border-collapse: collapse;
+                  border-style: hidden; 
+               }
+               thead{
+                  tr{
+                     th{
+                        padding: 30px 0px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: $titleColor;
+                     }
+                  }
+               }
+               tbody{
+                  tr{
+                     td{
+                        padding: 10px 0px;
+                        font-weight: 500;
+                        color: $titleColor;
+                        font-size: 14px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+//auto_loan_calculator
+#auto_loan_calculator{
+   padding: 50px 0px;
+   background-color: #fff;
+   .top_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px;
+         color: $titleColor;
+      }
+      p{
+         font-size: 15px;
+         width: 80%;
+         margin-top: 15px;
+         line-height: 25px;
+      }
+   }
+   .auto_loan_wrapper{
+      margin-top: 30px;
+      .auto_loan_left_box{
+         background-color: $tbg;
+         border-radius: 7px;
+         padding: 30px;
+         .form_input_box{
+            margin-bottom: 15px;
+            label{
+               font-size: 15px;
+               color: $titleColor;
+               display: block;
+               margin-bottom: 8px;
+            }
+            input{
+               width: 100%;
+               height: 40px;
+               background-color: #fff;
+               border: none;
+               border-radius: 5px;
+               padding: 0px 15px;
+               font-weight: 600;
+               font-size: 15px;
+               color: $titleColor;
+            }
+            .nice-select{
+               margin-bottom: 15px;
+               .current{
+                  font-size: 15px;
+               }
+            }
+            p{
+               margin-top: 20px;
+               font-weight: 600;
+               color: $titleColor;
+            }
+         }
+         .form_heading{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            p{
+               font-weight: 600;
+               color: $titleColor;
+            }
+         }
+         .auto_loan_submit_action{
+            margin-top: 20px;
+            button{
+               width: 85%;
+            }
+         }
+      }
+      .auto_load_result_box{
+         border: 1px solid #ddd;
+         height: 100%;
+         width: 100%;
+         margin: 0 auto;
+         border-radius: 7px;
+         padding: 30px 0px;
+         .top_info{
+            p{
+               font-size: 16px;
+               color: $titleColor;
+            }
+            h3{
+               font-weight: 600;
+               color: $mainColor;
+               font-size: 40px;
+               margin-top: 15px;
+            }
+         }
+         .result_list{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+            ul{
+               li{
+                  display: block;
+                  margin-bottom: 15px;
+                  color: $titleColor;
+                  span{
+                     display: block;
+                     float: right;
+                     font-weight: 600;
+                  }
+               }
+               .devider{
+                  height: 1px;
+                  width: 100%;
+                  background-color: #ddd;
+               }
+            }
+         }
+         .action_box{
+            margin-top: 130px;
+            a{
+               font-weight: 500;
+               font-size: 15px;
+               color: $mainColor;
+               &:hover{
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+   }
+   .auto_loan_table_result{
+      margin-top: 40px;
+      border: 1px solid #ddd;
+      padding: 40px 60px;
+      border-radius: 7px;
+      .top_area_info{
+         .date_filter{
+            h4{
+               font-weight: 500;
+               font-size: 18px;
+            }
+            input{
+               width: 50%;
+               border: 1px solid #ddd;
+               background-color: #fff;
+               height: 40px;
+               line-height: 40px;
+               border-radius: 5px;
+               padding: 0px 15px;
+               font-weight: 500;
+               font-size: 15px;
+               margin-top: 15px;
+            }
+         }
+         .date_filter_info_right{
+            h4{
+               font-size: 17px;
+               font-weight: 500;
+            }
+            h3{
+               margin-top: 10px;
+               color: $mainColor;
+               font-weight: 600;
+               font-size: 24px;
+            }
+         }
+      }
+      .main_table_area{
+         margin-top: 30px;
+         .table>thead {
+            vertical-align: middle !important;
+         }
+         .table>:not(:last-child)>:last-child>*{
+            border-color: #ddd;
+         }
+         thead{
+            tr{
+               th{
+                  font-weight: 500;
+                  font-size: 15px;
+                  line-height: 23px;
+               }
+            }
+         }
+         thead{
+            th{
+               padding: 10px 0px !important;
+               font-size: 15px;
+            }
+         }
+         tbody{
+            td{
+               padding: 10px 0px !important;
+               font-size: 14px;
+               font-weight: 500;
+            }
+            tr:last-child{
+               border-color: transparent;
+            }
+         }
+      }
+   }
+}

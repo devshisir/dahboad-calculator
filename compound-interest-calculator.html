@@ -1,0 +1,264 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Compound Interest Calculator</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+      rel="stylesheet">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="asset/css/plugin/nice-select.css">
+   <link rel="stylesheet" href="asset/css/plugin/range.min.css">
+   <link rel="stylesheet" href="asset/css/fontawsome.css">
+   <link rel="stylesheet" href="asset/css/style.css">
+   <link rel="stylesheet" href="asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- start Compound Interest Calculator  -->
+   <section id="compund_interst_calculator">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="top_title">
+                  <h3>Compound Interest Calculator</h3>
+                  <p>Consistent investing over a long period of time can be an effective strategy to accumulate wealth. Even small deposits to a savings account 
+                  can add up over time. The Bankrate Compound Interest Calculator demonstrates how to put this savings strategy to work.</p>
+               </div>
+               <div class="compund_interst_wrapper">
+                  <div class="row">
+                     <div class="col-xl-4">
+                        <div class="compund_interst_form_area">
+                           <h3>Savings Input</h3>
+                           <form action="#">
+                              <div class="form_input_box">
+                                 <div class="label_box">
+                                    <label>Starting Amount</label>
+                                 </div>
+                                 <div class="input_box">
+                                    <input type="text" value="$ 7855">
+                                 </div>
+                              </div>
+                              <div class="form_input_box">
+                                 <div class="label_box">
+                                    <label>Years to Save</label>
+                                 </div>
+                                 <div class="input_box">
+                                    <input type="text" value="$ 674">
+                                 </div>
+                              </div>
+                              <div class="form_input_box">
+                                 <div class="label_box">
+                                    <label>Rate of Return </label>
+                                 </div>
+                                 <div class="input_box">
+                                    <input type="text" value="$ 250">
+                                 </div>
+                              </div>
+                              <div class="form_input_box">
+                                 <div class="label_box">
+                                    <label>Additional Contribution</label>
+                                 </div>
+                                 <div class="input_box">
+                                    <input type="text" value="7.5 %">
+                                 </div>
+                              </div>
+                              <div class="form_input_box">
+                                 <div class="label_box">
+                                    <label>Frequency</label>
+                                 </div>
+                                 <div class="input_box">
+                                    <select>
+                                       <option value="0">Bi - Weekly</option>
+                                       <option value="1">Bi - Monthly</option>
+                                       <option value="2">Bi - Yearly</option>
+                                       <option value="3">Bi - Optuion</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="form_input_box">
+                                 <div class="label_box">
+                                    <label>Interest</label>
+                                 </div>
+                                 <div class="input_box">
+                                    <select>
+                                       <option value="0">Compound quarterly</option>
+                                       <option value="1">Compound Monthly</option>
+                                       <option value="2">Compound - Yearly</option>
+                                       <option value="3">Compound - Optuion</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="compound_interest_form_action text-center">
+                                 <button type="submit" class="c_btn">CALCULATE</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-xl-8">
+                        <div class="compund_interst_result_box">
+                           <div class="balance_by_year">
+                              <div class="top_title">
+                                 <h3>Balance By Year</h3>
+                              </div>
+                              <div class="main_canvas_box">
+                                 <canvas id="balance_year_compound"></canvas>
+                              </div>
+                           </div>
+                           <div class="result_summary">
+                              <div class="top_title">
+                                 <h3>Result Summary</h3>
+                              </div>
+                              <div class="result_summary_box">
+                                 <ul>
+                                    <li>Starting Amount : <span>$ 2500.00</span></li>
+                                    <li>Years : <span>10 Years</span></li>
+                                    <li>Additional Contributions : <span>$ 75.00 Bi-weekly</span></li>
+                                    <li>Rate Of Return : <span>0.54% Compounded Quarterly </span></li>
+                                    <li>Total Amount You Will Have To Contributed : <span>$ 22000.00</span></li>
+                                    <li>Total Interest : <span>$ 676.40</span></li>
+                                    <li>Total Investment : <span>$ 22676.40</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="savings_balance_box">
+                              <div class="top_title">
+                                 <h3>Savings Balance</h3>
+                              </div>
+                              <div class="savings_balance_table_box">
+                                 <table class="table table-bordered text-center">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Addition</th>
+                                        <th scope="col">Interest</th>
+                                        <th scope="col">Balance</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Start</td>
+                                        <td>$2500.00</td>
+                                        <td></td>
+                                        <td>$2500.00</td>
+                                      </tr>
+                                      <tr>
+                                         <td>1</td>
+                                         <td>$1950.00</td>
+                                         <td>$19.00</td>
+                                         <td>$4469.00</td>
+                                      </tr>
+                                      <tr>
+                                          <td>2</td>
+                                          <td>$1950.00</td>
+                                          <td>$29.65</td>
+                                          <td>$6448.65</td>
+                                       </tr>
+                                       <tr>
+                                          <td>3</td>
+                                          <td>$1950.00</td>
+                                          <td>$40.37</td>
+                                          <td>$8439.02</td>
+                                       </tr>
+                                       <tr>
+                                          <td>4</td>
+                                          <td>$1950.00</td>
+                                          <td>$51.13</td>
+                                          <td>$10440.15</td>
+                                       </tr>
+                                       <tr>
+                                          <td>5</td>
+                                          <td>$1950.00</td>
+                                          <td>$61.96</td>
+                                          <td>$12452.11</td>
+                                       </tr>
+                                       <tr>
+                                          <td>6</td>
+                                          <td>$1950.00</td>
+                                          <td>$72.85</td>
+                                          <td>$14474.96</td>
+                                       </tr>
+                                       <tr>
+                                          <td>7</td>
+                                          <td>$1950.00</td>
+                                          <td>$83.79</td>
+                                          <td>$16508.75</td>
+                                       </tr>
+                                       <tr>
+                                          <td>8</td>
+                                          <td>$1950.00</td>
+                                          <td>$94.79</td>
+                                          <td>$18553.75</td>
+                                       </tr>
+                                       <tr>
+                                          <td>9</td>
+                                          <td>$1950.00</td>
+                                          <td>$105.87</td>
+                                          <td>$20609.41</td>
+                                       </tr>
+                                       <tr>
+                                          <td>10</td>
+                                          <td>$1950.00</td>
+                                          <td>$116.99</td>
+                                          <td>$22676.40</td>
+                                       </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end Compound Interest Calculator  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- all javascript load here -->
+   <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/plugin/jquery.nice-select.min.js"></script>
+   <script src="asset/js/plugin/range.min.js"></script>
+   <script src="asset/js/plugin/Chart.min.js"></script>
+   <script src="asset/js/plugin/utils.js"></script>
+   <script src="asset/js/chart-data/compound-balance-by-year.js"></script>
+   <script src="asset/js/custom.js"></script>
+</body>
+
+</html>

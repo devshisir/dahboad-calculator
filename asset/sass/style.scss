@@ -22,6 +22,28 @@
       transform: translateY(-1px);
    }
 }
+.c_btn_2{
+   outline: none;
+   border: none;
+   background-color: transparent;
+   border: 1px solid $mainColor;
+   color: $mainColor;
+   width: 200px;
+   height: 40px;
+   line-height: 40px;
+   font-weight: 600;
+   font-size: 13px;
+   text-align: center;
+   border-radius: 10px;
+   transition: 0.4s;
+   display: inline-block;
+   &:hover{
+      background-color: $mainColor;
+      box-shadow: 0px 23px 46px rgba(0,0,0,0.1);
+      transform: translateY(-1px);
+      color: #fff;
+   }
+}
 .nice-select{
    width: 100%;
    border: none;
@@ -1194,6 +1216,291 @@ main code start here
             }
             tr:last-child{
                border-color: transparent;
+            }
+         }
+      }
+   }
+}
+
+
+//refinance_calculator
+#refinance_calculator{
+   padding: 50px 0px;
+   background-color: #fff;
+   .top_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px;
+      }
+      p{
+         margin-top: 10px;
+         font-size: 15px;
+         color: $titleColor;
+      }
+   }
+   .refinance_calculator_wrapper{
+      margin-top: 30px;
+      .refinace_left_box{
+         background-color: $tbg;
+         padding: 30px 35px;
+         border-radius: 7px;
+         .form_heading{
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .form_heading2{
+            margin-top: 35px;
+            margin-bottom: 30px;
+         }
+         .form_wrapper{
+            margin-top: 15px;
+            .form_input_box{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 20px;
+               .label_box{
+                  label{
+                     font-size: 15px;
+                     color: $titleColor;
+                  }
+                  p{
+                     font-size: 11px;
+                  }
+               }
+               .input_box{
+                  width: 300px;
+                  input{
+                     width: 100%;
+                     border: none;
+                     background-color: #fff;
+                     border-radius: 5px;
+                     padding: 0px 15px;
+                     font-weight: 600;
+                     font-size: 14px;
+                     color: $titleColor;
+                     height: 45px;
+                     line-height: 45px;
+                  }
+                  .nice-select{
+                     .current{
+                        font-size: 14px;
+                     }
+                  }
+               }
+            }
+         }
+         .refinance_form_action{
+            margin-top: 40px;
+            button{
+               width: 60%;
+            }
+         }
+      }
+      .refince_result_box{
+         background-color: $tbg;
+         border-radius: 7px;
+         padding: 25px 30px;
+         .top_title_result{
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .main_result{
+            margin-top: 20px;
+            ul{
+               li{
+                  display: block;
+                  font-weight: 400;
+                  font-size: 14px;
+                  color: $titleColor;
+                  margin-bottom: 25px;
+                  .value{
+                     display: block;
+                     float: right;
+                     font-weight: 600;
+                  }
+                  .light{
+                     font-size: 11px;
+                     width: 380px;
+                     display: inline-block;
+                  }
+               }
+               :last-child{
+                  margin-bottom: 0px;
+               }
+            }
+         }
+      }
+   }
+}
+
+//college_savings_calculator
+#college_savings_calculator{
+   padding: 50px 0px;
+   background-color: #fff;
+   .top_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px;
+      }
+      p{
+         margin-top: 15px;
+         font-size: 15px;
+         color: $titleColor;
+         width: 80%;
+      }
+   }
+   .collage_savings_wrapper{
+      margin-top: 30px;
+      .collage_savings_left_box{
+         background-color: $tbg;
+         padding: 20px;
+         border-radius: 7px;
+         .form_heading{
+            margin-bottom: 15px;
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .form_heading2{
+            margin-top: 30px;
+         }
+         .form_input_box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .label_box{
+               label{
+                  font-size: 14px;
+                  color: $titleColor;
+               }
+            }
+            .input_box{
+               width: 130px;
+               input{
+                  width: 100%;
+                  border: none;
+                  height: 40px;
+                  line-height: 40px;
+                  border-radius: 5px;
+                  font-weight: 600;
+                  font-size: 15px;
+                  padding: 0px 15px;
+               }
+            }
+         }
+         .college_form_action{
+            margin-top: 30px;
+            button{
+               width: 70%;
+            }
+         }
+      }
+      .college_result_box{
+         .college_expense_by_year{
+            #college_expense_canvas{
+               height: 400px;
+            }
+         }
+         .college_saving_plan{
+            margin-top: 30px;
+            .top_title_plan{
+               h3{
+                  font-weight: 600;
+                  font-size: 16px;
+               }
+            }
+            .college_saving_plan_box{
+               margin-top: 20px;
+               background-color: $tbg;
+               border-radius: 7px;
+               padding: 30px 30px;
+               width: 50%;
+               ul{
+                  li{
+                     display: block;
+                     font-size: 14px;
+                     color: $titleColor;
+                     margin-bottom: 15px;
+                     span{
+                        display: block;
+                        float: right;
+                        font-weight: 600;
+                     }
+                  }
+                  .devider{
+                     height: 1px;
+                     width: 100%;
+                     background-color: #ddd;
+                  }
+                  :last-child{
+                     margin-bottom: 0px;
+                     font-weight: 600;
+                  }
+               }
+            }
+         }
+         .collage_total_coast_by_child{
+            margin-top: 30px;
+            .top_title_child_cost{
+               h3{
+                  font-weight: 600;
+                  font-size: 16px;
+               }
+            }
+            .top_title_child_cost_box{
+               margin-top: 30px;
+               #collage_cost_by_child_canvas{
+                  height: 300px;
+               }
+            }
+         }
+         .college_saving_expense_year{
+            margin-top: 0px;
+            .top_year_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 16px;
+               }
+            }
+            .main_table_area{
+               margin-top: 30px;
+               background-color: $tbg;
+               border-radius: 7px;
+               .table{
+                  border-radius: 15px;
+                  border-collapse: collapse;
+                  border-style: hidden; 
+               }
+               .table>thead {
+                  vertical-align: middle;
+               }
+               thead{
+                  tr{
+                     th{
+                        padding: 30px 0px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: $titleColor;
+                     }
+                  }
+               }
+               tbody{
+                  tr{
+                     td{
+                        padding: 10px 0px;
+                        font-weight: 600;
+                        color: $titleColor;
+                        font-size: 14px;
+                     }
+                  }
+               }
             }
          }
       }

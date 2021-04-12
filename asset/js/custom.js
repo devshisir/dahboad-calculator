@@ -12,6 +12,18 @@ $(document).ready(function() {
             return value;
         } 
     });
+    $("#range_slider2").asRange({
+        tip:false,
+        format:function format(value) {
+            return value;
+        } 
+    });
+    $("#range_slider3").asRange({
+        tip:false,
+        format:function format(value) {
+            return value;
+        } 
+    });
     $("#range_slider1").on('asRange::change', function(e) {
         var val = $("#range_slider1").asRange('get');
         if (val > 1) {

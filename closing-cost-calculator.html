@@ -1,0 +1,575 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>Closing Costs Calculator</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+      rel="stylesheet">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="asset/css/plugin/range.min.css">
+   <link rel="stylesheet" href="asset/css/plugin/nice-select.css">
+   <link rel="stylesheet" href="asset/css/fontawsome.css">
+   <link rel="stylesheet" href="asset/css/style.css">
+   <link rel="stylesheet" href="asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- start Closing Costs Calculator -->
+   <section id="closing_cost_calculator">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="top_page_title">
+                  <h3>Closing Costs Calculator</h3>
+                  <p>Consistent investing over a long period of time can be an effective strategy to accumulate wealth. Even small deposits to a savings account 
+                  can add up over time. The Bankrate Compound Interest Calculator demonstrates how to put this savings strategy to work.</p>
+               </div>
+               <div class="closing_cost_top_form">
+                  <div class="top_form_title">
+                     <h4>Deatils</h4>
+                  </div>
+                  <div class="main_form_box">
+                     <div class="row">
+                        <div class="col-xl-4">
+                           <div class="form_item">
+                              <div class="label_box">
+                                 <label>Target Home Page</label>
+                              </div>
+                              <div class="input_box">
+                                 <div class="normal_input">
+                                    <input type="text" value="$2,50,000">
+                                 </div>
+                                 <div class="range_input">
+                                    <input id="range_slider2" class="range-example-input" type="text" min="0" max="25" value="10" name="points" step="1">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4">
+                           <div class="form_item">
+                              <div class="label_box">
+                                 <label>Down Payment</label>
+                              </div>
+                              <div class="input_box">
+                                 <div class="normal_input">
+                                    <input type="text" value="27%">
+                                 </div>
+                                 <div class="range_input">
+                                    <input id="range_slider3" class="range-example-input" type="text" min="0" max="100" value="50" name="points" step="1">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4">
+                           <div class="form_item">
+                              <div class="label_box">
+                                 <label>Points on this mortgage</label>
+                              </div>
+                              <div class="input_box">
+                                 <div class="normal_input">
+                                    <select>
+                                       <option value="0">0.0</option>
+                                       <option value="0">0.50</option>
+                                       <option value="0">1.0</option>
+                                       <option value="0">2.0</option>
+                                       <option value="0">4.0</option>
+                                       <option value="0">10.0</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form_option_3">
+                              <div class="form_option_3_flex">
+                                 <div class="form_3_box">
+                                    <p>Type of Loan</p>
+                                 </div>
+                                 <div class="form_3_box">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="form_radio" id="flexRadioDefault1">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                          FHA
+                                       </label>
+                                     </div>
+                                 </div>
+                                 <div class="form_3_box">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="form_radio" id="flexRadioDefault2">
+                                       <label class="form-check-label" for="flexRadioDefault2">
+                                          VA
+                                       </label>
+                                     </div>
+                                 </div>
+                                 <div class="form_3_box">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="form_radio" id="flexRadioDefault3" checked>
+                                       <label class="form-check-label" for="flexRadioDefault3">
+                                          Other
+                                       </label>
+                                     </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="closing_cost_work_sheet">
+                  <div class="work_sheet_title">
+                     <h3>Closing Costs Worksheet</h3>
+                  </div>
+                  <div class="work_sheet_main_top_title">
+                     <div class="row">
+                        <div class="col-xl-3">
+                           <p>Loan Estimate</p>
+                        </div>
+                        <div class="col-xl-2">
+                           <p>Line</p>
+                        </div>
+                        <div class="col-xl-4">
+                           <p>Charge</p>
+                        </div>
+                        <div class="col-xl-3">
+                           <p>Amount</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="closing_cost_bottom_form">
+                     <form action="#">
+                        <div class="form_start_heading">
+                           <h4>Loan Costs</h4>
+                        </div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">A. Origination Charges</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$775</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Origination Charges</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$775">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Points Credit/Charge</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <h3>$0</h3>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">B. Service You Cannot Shop For </p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$500</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Appraisal Fee</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$461">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Credit Report Fee</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$27">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Flood Certification</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$12">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">C. Services You Can Shop For </p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$1,595</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Title Search and Lenders Title Insurance</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$461">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Title Search and Lenders Title Insurance</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$27">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Postage/Courier</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$12">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Survey</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$12">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Attorney, Closing and Settlements Fees</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$12">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Miscellaneous Required Services</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$12">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">D. Total Cost For ( A + B + C )</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p class="bold">$2,870</p>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="form_start_heading form_start_heading2">
+                           <h4>Loan Costs</h4>
+                        </div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">E. Taxes and Government Fees</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$137</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Goverment Recording Fee</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$137">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Transfer Taxes</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$0">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">F. Prepaids</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$1,456</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Pre-paid Homeowner's Insurance(12 months)</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$1,250">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Up-front Mortgage Insurance Permium</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$0">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Pre-paid Daily Interest Charges <input type="text" value="15"> days.</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$12">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">G. Initial Escrow Payment at Closing</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$608</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Escrow Homeowner's Insurance(2 months)</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$208">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Escrow Property Taxes <input type="text" value="3"> Months.</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$400">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">H. Others</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p>$875</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_main_input_box">
+                           <div class="input_box">
+                              <div class="row">
+                                 <div class="col-xl-8">
+                                    <p class="text-center">Owner's Title Insurance</p>
+                                 </div>
+                                 <div class="col-xl-4">
+                                    <input type="text" value="$875">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading form_title_heading2">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">I. Total Other Costs( E + F + G + H )</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p class="bold">$3,076</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form_title_heading">
+                           <div class="row">
+                              <div class="col-xl-9">
+                                 <p class="text-center">J. Total Closing Costs ( D + I )</p>
+                              </div>
+                              <div class="col-xl-3">
+                                 <p class="bold">$875</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="calculate_action_btn text-center">
+                           <button type="submit" class="c_btn">CALCULATE</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="closing_cost_chart_area">
+                  <div class="top_title_chart_area">
+                     <h3>Based on Mortgage Amount of <span>$1,82,500</span></h3>
+                  </div>
+                  <div class="main_chart_wrapper">
+                     <div class="row">
+                        <div class="col-xl-4">
+                           <div class="canvas_area">
+                              <h4>Closing Cost</h4>
+                              <canvas id="closing_cost_pie_chart"></canvas>
+                              <div class="main_value text-center">
+                                 <h3>$5,946</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-8">
+                           <div class="closing_cost_chart_result">
+                              <div class="list_box">
+                                 <div class="list_circle">
+                                    <div class="circle"></div>
+                                 </div>
+                                 <div class="list_info">
+                                    <h4>One-Time Closing Costs and Fees</h4>
+                                    <p>(Origination charges, title insurance, Inspection fees, 
+                                    and other service fees)</p>
+                                    <a href="#">view/edit details</a>
+                                 </div>
+                                 <div class="list_price">
+                                    <h5>$3,882</h5>
+                                 </div>
+                              </div>
+                              <div class="list_box">
+                                 <div class="list_circle">
+                                    <div class="circle corcle_2"></div>
+                                 </div>
+                                 <div class="list_info">
+                                    <h4>Escrow and Pre-paid Expenses</h4>
+                                    <a href="#">view/edit details</a>
+                                 </div>
+                                 <div class="list_price">
+                                    <h5>$2,064</h5>
+                                 </div>
+                              </div>
+                              <div class="total_cost_closing">
+                                 <h4>Total Closing Costs</h4>
+                                 <h3>$5,946</h3>
+                              </div>
+                              <div class="sttelment_cost">
+                                 <div class="left_box">
+                                    <h4>Cash Needed at Settlement</h4>
+                                    <p>Includes $67,500 down payment</p>
+                                 </div>
+                                 <div class="price_sattelmant">
+                                    <h3>$73,446</h3>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end Closing Costs Calculator -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- all javascript load here -->
+   <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/plugin/jquery.nice-select.min.js"></script>
+   <script src="asset/js/plugin/range.min.js"></script>
+   <script src="asset/js/plugin/Chart.min.js"></script>
+   <script src="asset/js/plugin/utils.js"></script>
+   <script src="asset/js/chart-data/closing_cost_pie.js"></script>
+   <script src="asset/js/custom.js"></script>
+</body>
+
+</html>

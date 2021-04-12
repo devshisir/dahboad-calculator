@@ -1506,3 +1506,233 @@ main code start here
       }
    }
 }
+
+//debit_payoff_calculator
+#debit_payoff_calculator{
+   padding: 50px 0px;
+   background-color: #fff;
+   .top_area_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px;
+      }
+      p{
+         margin-top: 13px;
+         color: $titleColor;
+         width: 80%;
+         font-size: 15px;
+         line-height: 24px;
+      }
+   }
+   .debit_payoff_wrapper{
+      margin-top: 30px;
+      .debit_payoff_left_box{
+         background-color: $tbg;
+         border-radius: 7px;
+         padding: 40px 30px;
+         .form_box_item{
+            margin-bottom: 30px;
+            h4{
+               font-weight: 600;
+               font-size: 15px;
+               margin-bottom: 20px;
+            }
+            .form_item{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 10px;
+               .label_box{
+                  label{
+                     font-size: 15px;
+                     color: $titleColor;
+                  }
+               }
+               .input_box{
+                  width: 150px;
+                  input{
+                     width: 100%;
+                     border: none;
+                     border-radius: 5px;
+                     height: 40px;
+                     line-height: 40px;
+                     font-weight: 600;
+                     font-size: 14px;
+                     color: $titleColor;
+                     padding: 0px 15px;
+                  }
+                  .nice-select{
+                     .current{
+                        font-size: 14px;
+                     }
+                  }
+               }
+            }
+            .add_more_btn{
+               margin-top: 15px;
+               a{
+                  display: inline-block;
+                  width: auto;
+                  padding: 0px 30px;
+               }
+            }
+         }
+         :last-child{
+            margin-bottom: 0px;
+         }
+         .form_action_submit{
+            margin-top: 40px;
+            button{
+               width: 70%;
+            }
+         }
+      }
+      .debit_payoff_result_box{
+         .time_to_pay_debt_off{
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .time_to_pay_debt_off_canvas{
+            margin-top: 20px;
+            #time_to_pay_debt_canvas{
+               height: 350px;
+            }
+         }
+      }
+      .monthly_payment_box{
+         margin-top: 30px;
+         .monthy_payment_title{
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .mounthly_payment_comparioson{
+            margin-top: 20px;
+            #mounthly_payment_comparioson_canvas{
+               height: 350px;
+            }
+         }
+      }
+      .deb_result_summary{
+         margin-top: 30px;
+         .top_result_summary_title{
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .deb_result_summary_table{
+            margin-top: 20px;
+            background-color: $tbg;
+               border-radius: 7px;
+               .table{
+                  border-radius: 15px;
+                  border-collapse: collapse;
+                  border-style: hidden; 
+                  border-color: #555f615b;
+               }
+               thead{
+                  tr{
+                     th{
+                        padding: 20px 30px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: $titleColor;
+                     }
+                  }
+               }
+               tbody{
+                  tr{
+                     border-bottom-color: transparent;
+                     td{
+                        padding: 15px 30px;
+                        font-weight: 500;
+                        color: $titleColor;
+                        font-size: 14px;
+                        
+                     }
+                  }
+               }
+               tfoot{
+                  background-color: #E4E6E6;
+                  border-radius: 10px;
+                  tr{
+                     td{
+                        padding: 25px 20px;
+                        font-weight: 600;
+                        font-size: 14px;
+                     }
+                  }
+               }
+         }
+      }
+      .saving_and_expensess_table_nasted{
+         margin-top: 30px;
+         .top_table_title{
+            h3{
+               font-weight: 600;
+               font-size: 15px;
+            }
+         }
+         .main_nasted_table_wrapper{
+            margin-top: 30px;
+            background-color: $tbg;
+            border-radius: 7px;
+            .tabel_top_row{
+               width: 86.6%;
+               float: right;
+               margin: 0px;
+               border-bottom-color: transparent;
+               tr{
+                  border: 1px solid #555f615b;
+                  border-bottom: none;
+                  border-top: none;
+                  td{
+                     padding: 20px 0px;
+                     border-right: 1px solid #555f615b;
+                     font-size: 14px;
+                     color: $titleColor;
+                  }
+               }
+            }
+            .main_nasted_data_table{
+               width: 100%;
+               thead{
+                  tr{
+                     th{
+                        padding: 15px 20px;
+                        border: 1px solid #555f615b;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $titleColor;
+                     }
+                     :first-child{
+                        border-top: none;
+                        border-left: none;
+                     }
+                  }
+               }
+               tbody{
+                  tr{
+                     td{
+                        border-right: 1px solid #555f615b;
+                        padding: 10px 10.10px;
+                        font-weight: 600;
+                        font-size: 14px;
+                     }
+                     :first-child{
+                        border-left: none;
+                     }
+                     :last-child{
+                        border-right: none;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

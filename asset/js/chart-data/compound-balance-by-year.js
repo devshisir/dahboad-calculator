@@ -1,5 +1,8 @@
 // depertment wise performance
 var ctx = document.getElementById('balance_year_compound');
+Chart.Legend.prototype.afterFit = function() {
+   this.height = this.height + 100;
+};
 var myChart = new Chart(ctx, {
    type: 'bar',
    data: {

@@ -2044,3 +2044,294 @@ main code start here
       }
    }
 }
+
+
+
+//arm_fixed_rate_calculator
+#arm_fixed_rate_calculator{
+   padding: 50px 0px;
+   background-color: #fff;
+   .top_area_page_title{
+      h3{
+         font-weight: 600;
+         font-size: 24px;
+      }
+      p{
+         font-size: 16px;
+         line-height: 25px;
+         margin-top: 10px;
+      }
+   }
+   .arm_fixed_rate_wrapper{
+      margin-top: 30px;
+      .arm_left_panel{
+         padding: 35px 25px;
+         background-color: $tbg;
+         border-radius: 7px;
+         .form_box{
+            margin-bottom: 40px;
+            .form_heading{
+               margin-bottom: 25px;
+               h4{
+                  font-weight: 600;
+                  font-size: 15px;
+               }
+            }
+            .form_input_box{
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 15px;
+               .label_box{
+                  label{
+                     font-size: 13px;
+                     color: $titleColor;
+                  }
+               }
+               .input_box{
+                  width: 200px;
+                  > input{
+                     width: 100%;
+                     height: 40px;
+                     border: none;
+                     border-radius: 5px;
+                     font-weight: 600;
+                     font-size: 14px;
+                     color: $titleColor;
+                     padding: 0px 15px;
+                  }
+                  .current{
+                     font-size: 14px;
+                  }
+               }
+               .input_box2{
+                  display: flex;
+                  justify-content: space-between;
+                  .form-check{
+                     font-size: 14px;
+                     font-weight: 500;
+                     .form-check-label{
+                        margin-left: 4px;
+                     }
+                  }
+                  .form-check-input:checked {
+                     background-color: $mainColor;
+                     border-color: $mainColor;
+                  }
+               }
+            }
+         }
+         :last-child {
+            margin-bottom: 0px;
+         }
+         .arm_fixed_form_action{
+            button{
+               width: 75%;
+            }
+         }
+      }
+      .arm_fixed_right_panel {
+         padding-left: 30px;
+         .arm_char_area{
+            padding-top: 20px;
+            .top_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 17px;
+               }
+            }
+            .main_char_canvas{
+               margin-top: 20px;
+               #arm_fixe_chart_canvas{
+                  height: 400px;
+               }
+            }
+         }
+         .arm_vs_fixed_rate_mortage{
+            margin-top: 30px;
+            .top_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 17px;
+               }
+            }
+            .main_table_area{
+               margin-top: 25px;
+               background-color: $tbg;
+               border-radius: 7px;
+               width: 80%;
+               .table {
+                  border-radius: 15px;
+                  border-collapse: collapse;
+                  border-style: hidden;
+               }
+
+               thead {
+                  tr {
+                     th {
+                        padding: 15px 20px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $titleColor;
+                     }
+                  }
+               }
+
+               tbody {
+                  tr {
+                     td {
+                        padding: 10px 20px;
+                        font-weight: 500;
+                        color: $titleColor;
+                        font-size: 14px;
+                     }
+                  }
+               }
+            }
+         }
+         .arm_result_summary{
+            margin-top: 35px;
+            .top_title{
+               h3{
+                  font-weight: 600;
+                  font-size: 17px;
+               }
+            }
+            .result_summary_main_table{
+               margin-top: 25px;
+               background-color: $tbg;
+               border-radius: 7px;
+               width: 100%;
+               .table {
+                  border-radius: 15px;
+                  border-collapse: collapse;
+                  border-style: hidden;
+                  border-color: #555f6171;
+               }
+               thead {
+                  tr {
+                     th {
+                        padding: 15px 20px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $titleColor;
+                     }
+                     :nth-child(1){
+                        width: 170px;
+                     }
+                     :nth-child(2) {
+                        width: 200px;
+                     }
+                  }
+               }
+
+               tbody {
+                  tr {
+                     td {
+                        padding: 10px 20px;
+                        font-weight: 500;
+                        color: $titleColor;
+                        font-size: 13px;
+                        line-height: 24px;
+                     }
+                  }
+               }
+               tfoot{
+                  background-color: #EAEBEB;
+                  tr {
+                     td {
+                        padding: 10px 20px;
+                        font-weight: 500;
+                        color: $titleColor;
+                        font-size: 13px;
+                        line-height: 24px;
+                     }
+                  }
+               }
+            }
+         }
+         .arm_payment_schedule{
+            margin-top: 30px;
+            .top_title{
+               h3 {
+                  font-weight: 600;
+                  font-size: 17px;
+               }
+            }
+            .main_nasted_table_wrapper {
+               margin-top: 30px;
+               background-color: $tbg;
+               border-radius: 7px;
+
+               .tabel_top_row {
+                  width: 87%;
+                  float: right;
+                  margin: 0px;
+                  border-bottom-color: transparent;
+                  tr {
+                     border: 1px solid #555f615b;
+                     border-bottom: none;
+                     border-top: none;
+                     td {
+                        padding: 20px 0px;
+                        border-right: 1px solid #555f615b;
+                        font-size: 14px;
+                        color: $titleColor;
+                     }
+                     td:last-child {
+                        border-right: none;
+                     }
+                  }
+                  tr:last-child {
+                     border-right: none;
+                  }
+               }
+
+               .main_nasted_data_table {
+                  width: 100%;
+                  thead {
+                     tr {
+                        th {
+                           padding: 15px 20px;
+                           border: 1px solid #555f615b;
+                           font-size: 14px;
+                           font-weight: 400;
+                           color: $titleColor;
+                        }
+
+                        :first-child {
+                           border-top: none;
+                           border-left: none;
+                        }
+                        :last-child{
+                           border-right: none;
+                        }
+                     }
+                  }
+
+                  tbody {
+                     tr {
+                        td {
+                           border-right: 1px solid #555f615b;
+                           padding: 10px 10.10px;
+                           font-weight: 600;
+                           font-size: 14px;
+                        }
+
+                        :first-child {
+                           border-left: none;
+                        }
+
+                        :last-child {
+                           border-right: none;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+

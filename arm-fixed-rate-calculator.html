@@ -1,0 +1,499 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+   <meta charset="utf-8">
+   <title>ARM Or Fixed-Rate Calculator</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+      rel="stylesheet">
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="asset/img/favicons/apple-touch-icon.png" sizes="180x180">
+   <link rel="icon" href="asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+   <link rel="icon" href="asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   <link rel="stylesheet" href="asset/css/plugin/nice-select.css">
+   <link rel="stylesheet" href="asset/css/plugin/range.min.css">
+   <link rel="stylesheet" href="asset/css/fontawsome.css">
+   <link rel="stylesheet" href="asset/css/style.css">
+   <link rel="stylesheet" href="asset/css/responsive.css">
+   <!-- this is for mordanizar js link -->
+   <script src="asset/js/vendor/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body>
+   <!-- start ARM Or Fixed-Rate Calculator  -->
+   <section id="arm_fixed_rate_calculator">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="top_area_page_title">
+                  <h3>ARM Or Fixed-Rate Calculator</h3>
+                  <p>Use this ARM or fixed-rate calculator to determine whether a fixed-rate mortgage or an adjustable
+                     rate mortgage, or ARM, will be better for you when buying a home. The calculator also compares a
+                     fully amortizing or interest-only ARMs.</p>
+               </div>
+               <div class="arm_fixed_rate_wrapper">
+                  <div class="row">
+                     <div class="col-xl-4">
+                        <div class="arm_left_panel">
+                           <form action="#">
+                              <div class="form_box">
+                                 <div class="form_heading">
+                                    <h4>Fixed Rate Mortgage</h4>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Mortgage Amount</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="$ 17,000">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Term In Years</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <select>
+                                          <option value="0">Select option</option>
+                                          <option value="1">1 years</option>
+                                          <option value="2">2 years</option>
+                                          <option value="3">3 years</option>
+                                          <option value="4">4 years</option>
+                                          <option value="5">5 years</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Interest Rate</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="4.5 %">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Report Amortization</label>
+                                    </div>
+                                    <div class="input_box input_box2">
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                             id="flexRadioDefault1">
+                                          <label class="form-check-label" for="flexRadioDefault1">
+                                             Annually
+                                          </label>
+                                       </div>
+                                       <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                             id="flexRadioDefault2" checked>
+                                          <label class="form-check-label" for="flexRadioDefault2">
+                                             Monthly
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form_box">
+                                 <div class="form_heading">
+                                    <h4>Fully Amortizing ARM</h4>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Initial Interest Rate</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="4 %">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Months Rate Fixed</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="12">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Expected Adjustment</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="0.25 %">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Interest Rate Cap</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="25 %">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form_box">
+                                 <div class="form_heading">
+                                    <h4>Interest Only ARM</h4>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Initial Interest Rate</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="4 %">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Months Rate Fixed</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="8">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Expected Adjustment</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="0.25 %">
+                                    </div>
+                                 </div>
+                                 <div class="form_input_box">
+                                    <div class="label_box">
+                                       <label>Interest Rate Cap</label>
+                                    </div>
+                                    <div class="input_box">
+                                       <input type="text" value="12 %">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="arm_fixed_form_action text-center">
+                                 <button type="submit" class="c_btn">CALCULATE</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-xl-8">
+                        <div class="arm_fixed_right_panel">
+                           <div class="arm_char_area">
+                              <div class="top_title">
+                                 <h3>Balance and Expenses By Year</h3>
+                              </div>
+                              <div class="main_char_canvas">
+                                 <canvas id="arm_fixe_chart_canvas"></canvas>
+                              </div>
+                           </div>
+                           <div class="arm_vs_fixed_rate_mortage">
+                              <div class="top_title">
+                                 <h3>ARM vs Fixed Rate Mortgage</h3>
+                              </div>
+                              <div class="main_table_area">
+                                 <table class="table table-bordered text-end">
+                                    <thead>
+                                       <tr>
+                                          <th scope="col"></th>
+                                          <th scope="col">Fully Amortizing ARM</th>
+                                          <th scope="col">Interest Only ARM</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Initial Savings On Monthly Payments</td>
+                                          <td>3.85 %</td>
+                                          <td>$ 260.26</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Payment Savings First Year</td>
+                                          <td>$ 46.20</td>
+                                          <td>$ 3108.96</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Payment Savings For Second Year</td>
+                                          <td>$ 90.72</td>
+                                          <td>$ 12180.96</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="arm_result_summary">
+                              <div class="top_title">
+                                 <h3>Result Summary</h3>
+                              </div>
+                              <div class="result_summary_main_table">
+                                 <table class="table table-bordered text-end">
+                                    <thead>
+                                       <tr>
+                                          <th scope="col"></th>
+                                          <th scope="col">Fixed Rate Mortgage</th>
+                                          <th scope="col">Fully Amortizing ARM</th>
+                                          <th scope="col">Interest Only ARM</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>Loan Amount</td>
+                                          <td>$ 17000.00</td>
+                                          <td>$ 17000.00</td>
+                                          <td>$ 17000.00</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Terms</td>
+                                          <td>5 Years</td>
+                                          <td>5 Years</td>
+                                          <td>5 Years</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Interest Rate</td>
+                                          <td>4.5 %</td>
+                                          <td>4% Rate is fixed for 12 months and then is adjusted by 0.25% every 12
+                                             months, up to a maximum of 25%. Thehighest rate actually charged was 5%.
+                                          </td>
+                                          <td>4% Rate is fixed for 12 months and then is
+                                             adjusted by 0.25% every
+                                             12 months, up to a
+                                             maximum of 25%. The
+                                             highest rate actually
+                                             charged was 5%.</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Initial Monthly Payment</td>
+                                          <td>$ 316.93</td>
+                                          <td>$ 316.93</td>
+                                          <td>$ 56.67</td>
+                                       </tr>
+                                       <tr>
+                                          <td>Payments After Four Years</td>
+                                          <td>$ 316.93</td>
+                                          <td>$ 316.93</td>
+                                          <td>$ 70.83</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             First Year Totals:<br>
+                                             Interest <br>
+                                             Principal <br>
+                                             Payment
+                                          </td>
+                                          <td>
+                                             $ 701.55
+                                             <br>
+                                             $ 3101.61
+                                             <br>
+                                             $ 3803.16
+                                          </td>
+                                          <td>
+                                             $ 622.95
+                                             <br>
+                                             $ 3134.01
+                                             <br>
+                                             $ 3756.96
+                                          </td>
+                                          <td>
+                                             $ 694.20
+                                             <br>
+                                             $ 0.00
+                                             <br>
+                                             $ 694.20
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             First Year Totals:<br>
+                                             Interest <br>
+                                             Principal <br>
+                                             Payment
+                                          </td>
+                                          <td>
+                                             $ 1924.77
+                                             <br>
+                                             $ 13287.87
+                                             <br>
+                                             $ 15212.64
+                                          </td>
+                                          <td>
+                                             $ 1825.50
+                                             <br>
+                                             $ 13296.42
+                                             <br>
+                                             $ 15121.92
+                                          </td>
+                                          <td>
+                                             $ 3031.68
+                                             <br>
+                                             $ 0.00
+                                             <br>
+                                             $ 3031.68
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                    <tfoot>
+                                       <tr>
+                                          <td>
+                                             First Year Totals:<br>
+                                             Interest <br>
+                                             Principal <br>
+                                             Payment
+                                          </td>
+                                          <td>
+                                             $ 2015.87
+                                             <br>
+                                             $ 19015.87
+                                             <br>
+                                             $ 0.00
+                                          </td>
+                                          <td>
+                                             $ 1926.57
+                                             <br>
+                                             $ 18926.57
+                                             <br>
+                                             $ 0.00
+                                          </td>
+                                          <td>
+                                             $ 3895.84
+                                             <br>
+                                             $ 3895.84
+                                             <br>
+                                             $ 17000.00
+                                          </td>
+                                       </tr>
+                                    </tfoot>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="arm_payment_schedule">
+                              <div class="top_title">
+                                 <h3>Payment Schedule</h3>
+                              </div>
+                              <div class="main_nasted_table_wrapper">
+                                 <table class="tabel_top_row text-center">
+                                    <tbody>
+                                       <tr>
+                                          <td>Fixed Rate Mortgage</td>
+                                          <td>ARM Fully Amortizing</td>
+                                          <td>Interest Only ARM</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table class="text-center main_nasted_data_table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Months</th>
+                                        <th scope="col">Payment</th>
+                                        <th scope="col">Balance</th>
+                                        <th scope="col">Payment</th>
+                                        <th scope="col">Balance</th>
+                                        <th scope="col">Payment</th>
+                                        <th scope="col">Balance</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td class="text-end"></td>
+                                          <td></td>
+                                          <td>$ 17000.00</td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>$ 17000.00</td>
+                                          <td></td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 13898.39</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 13898.39</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 13898.39</td>
+                                       </tr>
+                                       <tr>
+                                          <td>2</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                       </tr>
+                                       <tr>
+                                          <td>3</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                       </tr>
+                                       <tr>
+                                          <td>4</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                       </tr>
+                                       <tr>
+                                          <td>5</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                          <td>$ 3803.16</td>
+                                          <td>$ 10654.30</td>
+                                       </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end ARM Or Fixed-Rate Calculator  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- all javascript load here -->
+   <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
+   <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/plugin/jquery.nice-select.min.js"></script>
+   <script src="asset/js/plugin/range.min.js"></script>
+   <script src="asset/js/plugin/Chart.min.js"></script>
+   <script src="asset/js/plugin/utils.js"></script>
+   <script src="asset/js/chart-data/arm-chart-data.js"></script>
+   <script src="asset/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,53 +1,1787 @@
-/* XL (laptop) Device :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
-    
-}
-@media (min-width: 1200px) and (max-width: 1300px) {
-   
-}
-/* LG Device :992px. */
-@media (min-width: 992px) and (max-width: 1199px) {
-    
+@media (min-width:1400px) and (max-width:1600px) {
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .balance_by_year .main_canvas_box #balance_year_compound {
+      height: 400px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary {
+      margin-top: -80px
+   }
 }
 
+@media (min-width:1200px) and (max-width:1399px) {
+   #investment_calculator .calculator_form .form_input label {
+      font-size: 14px
+   }
 
-/* MD Device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {}
+   #investment_calculator .calculator_form .form_input input {
+      font-size: 14px
+   }
 
+   .nice-select .current {
+      font-size: 14px !important
+   }
 
-@media (max-width: 767px) {
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .balance_by_year .main_canvas_box #balance_year_compound {
+      height: 400px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary {
+      margin-top: -80px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted .main_nasted_table_wrapper .tabel_top_row {
+      width: 86.8%
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item {
+      margin-bottom: 30px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex {
+      margin-top: -20px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area {
+      margin-top: 50px
+   }
 }
 
-/*-- Phone Landscape --*/
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
+@media (min-width:992px) and (max-width:1199px) {
+   #investment_calculator .calculator_form .form_input {
+      margin-bottom: 15px
+   }
 
+   #investment_calculator .calculator_form .form_input label {
+      font-size: 14px
+   }
 
+   #investment_calculator .calculator_form .form_input input {
+      font-size: 14px
+   }
 
-/* Extra small Device. */
-@media (max-width: 575px) {}
+   .nice-select .current {
+      font-size: 14px !important
+   }
 
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .groth_chart #groth_chat_canvas {
+      height: 300px
+   }
 
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year #balance_at_year_canvas {
+      height: 200px
+   }
 
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year_chart_legend {
+      width: 70%;
+      margin: 0 auto
+   }
 
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_left .savings_calculator_form_area .form_input_box input {
+      margin-bottom: 15px
+   }
 
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .main_chart_box #saving_chat_canvas {
+      width: 100% !important;
+      height: 400px
+   }
 
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend .saving_chart_info_container {
+      gap: 30px;
+      flex-wrap: wrap
+   }
 
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend {
+      width: 90%
+   }
 
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .left_box {
+      width: 100%
+   }
 
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
 
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box {
+      height: 100%;
+      padding-bottom: 0
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      width: 100%
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      width: 100%
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .top_area_info .date_filter_info_right {
+      margin-top: 20px
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area {
+      overflow-x: scroll
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area table {
+      width: 800px
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      padding: 30px
+   }
 
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      padding: 30px
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .balance_by_year .main_canvas_box #balance_year_compound {
+      height: 400px
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary {
+      margin-top: -80px
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: inherit;
+      margin-bottom: 10px;
+      flex-direction: column
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box input {
+      width: 100%
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .label_box {
+      margin-bottom: 10px
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area {
+      padding: 20px
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      width: 100%
+   }
 
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box .nice-select {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .compound_interest_form_action button {
+      width: 100%
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted {
+      overflow-x: scroll
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item {
+      margin-bottom: 30px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex {
+      margin-top: -20px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area {
+      margin-top: 50px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area .main_chart_wrapper .closing_cost_chart_result {
+      width: 100%
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box {
+      padding: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .top_area_info .date_filter input {
+      width: 80%
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_result_box {
+      width: 100%
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_left_form {
+      padding: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box .auto_loan_submit_action button {
+      width: 100%
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .collage_savings_left_box .form_input_box .input_box {
+      width: 500px
+   }
+
+   .college_result_box {
+      margin-top: 30px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box {
+      width: 500px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 {
+      justify-content: flex-start
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 .form-check {
+      margin-right: 20px
+   }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+   #investment_calculator .calculator_form .form_input {
+      margin-bottom: 15px
+   }
+
+   #investment_calculator .calculator_form .form_input label {
+      font-size: 14px
+   }
+
+   #investment_calculator .calculator_form .form_input input {
+      font-size: 14px
+   }
+
+   .nice-select .current {
+      font-size: 14px !important
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .groth_chart #groth_chat_canvas {
+      height: 300px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year #balance_at_year_canvas {
+      height: 200px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year_chart_legend {
+      width: 70%;
+      margin: 0 auto
+   }
+
+   #invesment_cal_result_table .invesment_cal_result_table_container {
+      overflow-x: scroll
+   }
+
+   #invesment_cal_result_table .invesment_cal_result_table_container table {
+      width: 1200px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .title h3 {
+      text-align: center
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_left .savings_calculator_form_area .form_input_box input {
+      margin-bottom: 15px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .main_chart_box #saving_chat_canvas {
+      width: 100% !important;
+      height: 400px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend .saving_chart_info_container {
+      flex-wrap: wrap
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend {
+      width: 90%
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area {
+      margin-top: 50px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .left_box {
+      width: 100%
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box {
+      padding-bottom: 100px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .top_area_info .date_filter_info_right {
+      margin-top: 20px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area {
+      overflow-x: scroll
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area table {
+      width: 800px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      padding: 30px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      padding: 30px;
+      margin-top: 30px
+   }
+
+   #personal_loan_calculator {
+      padding: 30px 0
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .balance_by_year .main_canvas_box #balance_year_compound {
+      height: 400px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary {
+      margin-top: -80px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: inherit;
+      margin-bottom: 10px;
+      flex-direction: column
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box input {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .label_box {
+      margin-bottom: 10px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area {
+      padding: 20px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box .nice-select {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .compound_interest_form_action button {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      margin-top: 30px
+   }
+
+   #compund_interst_calculator {
+      padding: 30px 0
+   }
+
+   #compund_interst_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #compund_interst_calculator .top_title p {
+      font-size: 14px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted {
+      overflow-x: scroll
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box {
+      margin-bottom: 30px
+   }
+
+   #debit_payoff_calculator {
+      padding: 30px 0
+   }
+
+   #debit_payoff_calculator .top_area_title h3 {
+      font-size: 20px
+   }
+
+   #debit_payoff_calculator .top_area_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item {
+      margin-bottom: 30px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex {
+      margin-top: -20px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area {
+      margin-top: 50px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area .main_chart_wrapper .closing_cost_chart_result {
+      width: 100%
+   }
+
+   #closing_cost_calculator {
+      padding: 30px 0
+   }
+
+   #closing_cost_calculator .top_page_title h3 {
+      font-size: 20px
+   }
+
+   #closing_cost_calculator .top_page_title p {
+      font-size: 14px;
+      width: 100%;
+      line-height: 24px
+   }
+
+   #closing_cost_calculator .closing_cost_work_sheet .work_sheet_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box {
+      padding: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .top_area_info .date_filter input {
+      width: 80%
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_load_result_box {
+      margin-top: 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result {
+      margin-top: 70px;
+      padding: 30px 30px
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_result_box {
+      width: 100%;
+      padding: 100px 0;
+      margin-top: 20px
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_left_form {
+      padding: 20px
+   }
+
+   #debt_to_income_ratio_calculator {
+      padding: 30px 0
+   }
+
+   #debt_to_income_ratio_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box .auto_loan_submit_action button {
+      width: 100%
+   }
+
+   #auto_loan_calculator {
+      padding: 30px 0
+   }
+
+   #auto_loan_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area {
+      overflow-x: scroll
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area table {
+      width: 1000px
+   }
+
+   #refinance_calculator {
+      padding: 30px 0
+   }
+
+   #refinance_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #refinance_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box .auto_loan_submit_action button {
+      width: 100%
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .collage_savings_left_box .form_input_box .input_box {
+      width: 300px
+   }
+
+   .college_result_box {
+      margin-top: 30px
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_plan .college_saving_plan_box {
+      width: 70%
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_expense_year .main_table_area {
+      overflow-x: scroll
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_expense_year .main_table_area table {
+      width: 1000px
+   }
+
+   #college_savings_calculator {
+      padding: 30px 0
+   }
+
+   #college_savings_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #college_savings_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box {
+      width: 300px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 {
+      justify-content: flex-start
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 .form-check {
+      margin-right: 20px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_vs_fixed_rate_mortage .main_table_area {
+      width: 100%
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_payment_schedule {
+      overflow-x: scroll
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_payment_schedule .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #arm_fixed_rate_calculator {
+      padding: 30px 0
+   }
+
+   #arm_fixed_rate_calculator .top_area_page_title h3 {
+      font-size: 20px
+   }
+
+   #arm_fixed_rate_calculator .top_area_page_title p {
+      font-size: 14px;
+      line-height: 24px
+   }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+   #investment_calculator .calculator_form .form_input {
+      margin-bottom: 15px
+   }
+
+   #investment_calculator .calculator_form .form_input label {
+      font-size: 14px
+   }
+
+   #investment_calculator .calculator_form .form_input input {
+      font-size: 14px
+   }
+
+   .nice-select .current {
+      font-size: 14px !important
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .groth_chart #groth_chat_canvas {
+      height: 300px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year #balance_at_year_canvas {
+      height: 200px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year_chart_legend {
+      width: 80%;
+      margin: 0 auto
+   }
+
+   #invesment_cal_result_table .invesment_cal_result_table_container {
+      overflow-x: scroll
+   }
+
+   #invesment_cal_result_table .invesment_cal_result_table_container table {
+      width: max-content
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .title h3 {
+      text-align: center
+   }
+
+   #investment_calculator {
+      padding-top: 30px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_left .savings_calculator_form_area .form_input_box input {
+      margin-bottom: 15px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .main_chart_box #saving_chat_canvas {
+      width: 100% !important;
+      height: 500px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend .saving_chart_info_container {
+      flex-wrap: wrap
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend .saving_chart_info_container .infor_box {
+      margin-bottom: 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend {
+      width: 90%
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area {
+      margin-top: 50px
+   }
+
+   #savings_calculator {
+      padding: 30px 0
+   }
+
+   #savings_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper {
+      margin-top: 20px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .left_box {
+      width: 100%
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box {
+      padding: 30px;
+      margin-top: 30px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box {
+      padding-bottom: 100px
+   }
+
+   #credit_card_payoff_calculator {
+      padding: 30px 0
+   }
+
+   #credit_card_payoff_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #credit_card_payoff_calculator .top_title p {
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .top_area_info .date_filter_info_right {
+      margin-top: 20px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area {
+      overflow-x: scroll
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area table {
+      width: 800px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      padding: 30px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      padding: 30px;
+      margin-top: 30px
+   }
+
+   #personal_loan_calculator {
+      padding: 30px 0
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .balance_by_year .main_canvas_box #balance_year_compound {
+      height: 400px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary {
+      margin-top: -80px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: inherit;
+      margin-bottom: 10px;
+      flex-direction: column
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box input {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .label_box {
+      margin-bottom: 10px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area {
+      padding: 20px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box .nice-select {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .compound_interest_form_action button {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      margin-top: 30px
+   }
+
+   #compund_interst_calculator {
+      padding: 30px 0
+   }
+
+   #compund_interst_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #compund_interst_calculator .top_title p {
+      font-size: 14px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted {
+      overflow-x: scroll
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box {
+      margin-bottom: 30px
+   }
+
+   #debit_payoff_calculator {
+      padding: 30px 0
+   }
+
+   #debit_payoff_calculator .top_area_title h3 {
+      font-size: 20px
+   }
+
+   #debit_payoff_calculator .top_area_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .deb_result_summary .deb_result_summary_table {
+      overflow-x: scroll
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .deb_result_summary .deb_result_summary_table .table {
+      width: 700px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box .form_box_item .form_item .input_box {
+      width: 200px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item {
+      margin-bottom: 30px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex {
+      margin-top: -20px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area {
+      margin-top: 50px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area .main_chart_wrapper .closing_cost_chart_result {
+      width: 100%
+   }
+
+   #closing_cost_calculator {
+      padding: 30px 0
+   }
+
+   #closing_cost_calculator .top_page_title h3 {
+      font-size: 20px
+   }
+
+   #closing_cost_calculator .top_page_title p {
+      font-size: 14px;
+      width: 100%;
+      line-height: 24px
+   }
+
+   #closing_cost_calculator .closing_cost_work_sheet .work_sheet_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box {
+      padding: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .top_area_info .date_filter input {
+      width: 80%
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_load_result_box {
+      margin-top: 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result {
+      margin-top: 70px;
+      padding: 30px 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .top_area_info .date_filter_info_right {
+      margin-top: 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area {
+      overflow-x: scroll
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area table {
+      width: 1000px
+   }
+
+   #auto_loan_calculator {
+      padding: 30px 0
+   }
+
+   #auto_loan_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_result_box {
+      width: 100%;
+      padding: 100px 0;
+      margin-top: 20px
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_left_form {
+      padding: 20px
+   }
+
+   #debt_to_income_ratio_calculator {
+      padding: 30px 0
+   }
+
+   #debt_to_income_ratio_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box .auto_loan_submit_action button {
+      width: 100%
+   }
+
+   #auto_loan_calculator {
+      padding: 30px 0
+   }
+
+   #auto_loan_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area {
+      overflow-x: scroll
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area table {
+      width: 1000px
+   }
+
+   #refinance_calculator {
+      padding: 30px 0
+   }
+
+   #refinance_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #refinance_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box .label_box {
+      margin-bottom: 10px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box .label_box label {
+      font-size: 16px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_heading {
+      margin-bottom: 30px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box .input_box {
+      width: 100%
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refince_result_box .main_result ul li .value {
+      display: block;
+      float: inherit;
+      margin-top: 10px
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .collage_savings_left_box .form_input_box .input_box {
+      width: 200px
+   }
+
+   .college_result_box {
+      margin-top: 30px
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_plan .college_saving_plan_box {
+      width: 80%
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_expense_year .main_table_area {
+      overflow-x: scroll
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_expense_year .main_table_area table {
+      width: 1000px
+   }
+
+   #college_savings_calculator {
+      padding: 30px 0
+   }
+
+   #college_savings_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #college_savings_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box {
+      width: 250px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 {
+      justify-content: flex-start
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 .form-check {
+      margin-right: 20px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_vs_fixed_rate_mortage .main_table_area {
+      width: 100%
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_payment_schedule {
+      overflow-x: scroll
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_payment_schedule .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #arm_fixed_rate_calculator {
+      padding: 30px 0
+   }
+
+   #arm_fixed_rate_calculator .top_area_page_title h3 {
+      font-size: 20px
+   }
+
+   #arm_fixed_rate_calculator .top_area_page_title p {
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_result_summary .result_summary_main_table {
+      overflow-x: scroll
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_result_summary .result_summary_main_table table {
+      width: 1000px
+   }
+}
+
+@media (max-width:575px) {
+   #investment_calculator .calculator_form .form_input {
+      margin-bottom: 15px
+   }
+
+   #investment_calculator .calculator_form .form_input label {
+      font-size: 14px
+   }
+
+   #investment_calculator .calculator_form .form_input input {
+      font-size: 14px
+   }
+
+   .nice-select .current {
+      font-size: 14px !important
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .groth_chart #groth_chat_canvas {
+      height: 250px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year #balance_at_year_canvas {
+      height: 200px
+   }
+
+   #invesment_cal_result_table .invesment_cal_result_table_container {
+      overflow-x: scroll
+   }
+
+   #invesment_cal_result_table .invesment_cal_result_table_container table {
+      width: max-content
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .title h3 {
+      text-align: center
+   }
+
+   #investment_calculator {
+      padding-top: 30px
+   }
+
+   #investment_calculator .calculator_form .form_input .nice-select {
+      margin-bottom: 15px
+   }
+
+   #investment_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .investment_calculator_groth_overtime .title h3 {
+      font-size: 16px
+   }
+
+   #investment_calculator_result_box .investment_calculator_result_container .balance_at_year .title h3 {
+      font-size: 16px
+   }
+
+   #investment_calculator .form_calculate_result h3 {
+      font-size: 13px
+   }
+
+   #investment_calculator .form_calculate_result h3 span {
+      font-size: 15px
+   }
+
+   .c_btn {
+      width: 100% !important;
+      font-size: 14px
+   }
+
+   #investment_calculator .calculator_form {
+      padding: 25px 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_left .savings_calculator_form_area .form_input_box input {
+      margin-bottom: 15px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .main_chart_box #saving_chat_canvas {
+      width: 100% !important;
+      height: 500px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend .saving_chart_info_container {
+      flex-wrap: wrap
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend .saving_chart_info_container .infor_box {
+      margin-bottom: 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .char_savvings_legend {
+      width: 90%
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area {
+      margin-top: 50px
+   }
+
+   #savings_calculator {
+      padding: 30px 0
+   }
+
+   #savings_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper {
+      margin-top: 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper {
+      padding: 30px 20px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_left .savings_calculator_form_area .form_input_box input {
+      font-size: 14px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .top_title h4 {
+      font-size: 16px;
+      line-height: 26px
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .top_title h3 {
+      font-size: 20px;
+      font-weight: 600
+   }
+
+   #savings_calculator .savings_calculator_wrapper .savings_calculator_chart_area .main_chart_box #saving_chat_canvas {
+      height: 400px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .left_box {
+      width: 100%
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box {
+      padding: 30px;
+      margin-top: 30px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box {
+      padding-bottom: 100px
+   }
+
+   #credit_card_payoff_calculator {
+      padding: 30px 0
+   }
+
+   #credit_card_payoff_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #credit_card_payoff_calculator .top_title p {
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box .credit_result_top .credit_result_top_right .item_box {
+      margin-bottom: 20px
+   }
+
+   #credit_card_payoff_calculator .credit_cla_main_wrapper .right_box .credit_result_intest_progress {
+      margin-top: 30px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      width: 100%
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box .credit_result_top .credit_result_top_right {
+      padding-left: 0;
+      margin-top: 20px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .top_area_info .date_filter_info_right {
+      margin-top: 20px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area {
+      overflow-x: scroll
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table .main_table_area table {
+      width: 800px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_table {
+      padding: 30px
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box {
+      padding: 30px;
+      margin-top: 30px
+   }
+
+   #personal_loan_calculator {
+      padding: 30px 0
+   }
+
+   #personal_loan_calculator .personal_loan_wrapper .personal_loan_result_box .credit_result_top .credit_result_top_right .item_box {
+      margin-top: 10px;
+      margin-bottom: 10px
+   }
+
+   #personal_loan_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #personal_loan_calculator .top_title p {
+      font-size: 14px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .balance_by_year .main_canvas_box #balance_year_compound {
+      height: 400px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary {
+      margin-top: -80px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: inherit;
+      margin-bottom: 10px;
+      flex-direction: column
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box input {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .label_box {
+      margin-bottom: 10px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area {
+      padding: 20px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .form_input_box .input_box .nice-select {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_form_area .compound_interest_form_action button {
+      width: 100%
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box {
+      margin-top: 30px
+   }
+
+   #compund_interst_calculator {
+      padding: 30px 0
+   }
+
+   #compund_interst_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #compund_interst_calculator .top_title p {
+      font-size: 14px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .savings_balance_box .savings_balance_table_box {
+      overflow-x: scroll
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .savings_balance_box .savings_balance_table_box table {
+      width: 600px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary .result_summary_box ul li {
+      text-align: left;
+      margin-bottom: 20px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary .result_summary_box ul li span {
+      width: 100%;
+      float: inherit;
+      margin-left: 0;
+      margin-top: 6px
+   }
+
+   #compund_interst_calculator .compund_interst_wrapper .compund_interst_result_box .result_summary .result_summary_box {
+      padding: 30px 20px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .saving_and_expensess_table_nasted {
+      overflow-x: scroll
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box {
+      margin-bottom: 30px
+   }
+
+   #debit_payoff_calculator {
+      padding: 30px 0
+   }
+
+   #debit_payoff_calculator .top_area_title h3 {
+      font-size: 20px
+   }
+
+   #debit_payoff_calculator .top_area_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .deb_result_summary .deb_result_summary_table {
+      overflow-x: scroll
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .deb_result_summary .deb_result_summary_table .table {
+      width: 700px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box .form_box_item .form_item .input_box {
+      width: 100%
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box .form_box_item .form_item {
+      align-items: flex-start;
+      flex-direction: column
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box .form_box_item .form_item .label_box {
+      margin-bottom: 10px
+   }
+
+   #debit_payoff_calculator .debit_payoff_wrapper .debit_payoff_left_box {
+      padding: 30px 20px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item {
+      margin-bottom: 30px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex {
+      margin-top: -20px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area {
+      margin-top: 50px
+   }
+
+   #closing_cost_calculator .closing_cost_chart_area .main_chart_wrapper .closing_cost_chart_result {
+      width: 100%
+   }
+
+   #closing_cost_calculator {
+      padding: 30px 0
+   }
+
+   #closing_cost_calculator .top_page_title h3 {
+      font-size: 20px
+   }
+
+   #closing_cost_calculator .top_page_title p {
+      font-size: 14px;
+      width: 100%;
+      line-height: 24px
+   }
+
+   #closing_cost_calculator .closing_cost_work_sheet .work_sheet_title h3 {
+      font-size: 20px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form {
+      padding: 30px 20px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item {
+      flex-direction: column
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item .label_box {
+      margin-bottom: 10px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_item .input_box {
+      width: 100%
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex .form_3_box {
+      font-size: 14px
+   }
+
+   #closing_cost_calculator .closing_cost_top_form .main_form_box .form_option_3 .form_option_3_flex {
+      justify-content: flex-start
+   }
+
+   #closing_cost_calculator .closing_cost_work_sheet .work_sheet_main_top_title p {
+      margin-bottom: 15px
+   }
+
+   #closing_cost_calculator .closing_cost_bottom_form .form_main_input_box {
+      width: 100%
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box {
+      padding: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .top_area_info .date_filter input {
+      width: 80%
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_load_result_box {
+      margin-top: 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result {
+      margin-top: 50px;
+      padding: 30px 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .top_area_info .date_filter_info_right {
+      margin-top: 30px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area {
+      overflow-x: scroll
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area table {
+      width: 700px
+   }
+
+   #auto_loan_calculator {
+      padding: 30px 0
+   }
+
+   #auto_loan_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_load_result_box .result_list {
+      width: 80%
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_result_box {
+      width: 100%;
+      padding: 100px 0;
+      margin-top: 20px
+   }
+
+   #debt_to_income_ratio_calculator .deb_in_ratio_wrapper .deb_in_ratio_left_form {
+      padding: 20px
+   }
+
+   #debt_to_income_ratio_calculator {
+      padding: 30px 0
+   }
+
+   #debt_to_income_ratio_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_wrapper .auto_loan_left_box .auto_loan_submit_action button {
+      width: 100%
+   }
+
+   #auto_loan_calculator {
+      padding: 30px 0
+   }
+
+   #auto_loan_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area {
+      overflow-x: scroll
+   }
+
+   #auto_loan_calculator .auto_loan_table_result .main_table_area table {
+      width: 1000px
+   }
+
+   #refinance_calculator {
+      padding: 30px 0
+   }
+
+   #refinance_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #refinance_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box .label_box {
+      margin-bottom: 10px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box .label_box label {
+      font-size: 16px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_heading {
+      margin-bottom: 30px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box .form_wrapper .form_input_box .input_box {
+      width: 100%
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refince_result_box .main_result ul li .value {
+      display: block;
+      float: inherit;
+      margin-top: 10px
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refince_result_box .main_result ul li .light {
+      width: 100%
+   }
+
+   #refinance_calculator .refinance_calculator_wrapper .refinace_left_box {
+      padding: 30px 20px
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .collage_savings_left_box .form_input_box .input_box {
+      width: 100%
+   }
+
+   .college_result_box {
+      margin-top: 30px
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_plan .college_saving_plan_box {
+      width: 100%
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_expense_year .main_table_area {
+      overflow-x: scroll
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_saving_expense_year .main_table_area table {
+      width: 1000px
+   }
+
+   #college_savings_calculator {
+      padding: 30px 0
+   }
+
+   #college_savings_calculator .top_title h3 {
+      font-size: 20px
+   }
+
+   #college_savings_calculator .top_title p {
+      font-size: 14px;
+      line-height: 24px;
+      width: 100%
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .collage_savings_left_box .form_input_box {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .collage_savings_left_box .form_heading {
+      margin-bottom: 20px
+   }
+
+   #college_savings_calculator .collage_savings_wrapper .college_result_box .college_expense_by_year #college_expense_canvas {
+      height: 300px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box {
+      width: 100%
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 {
+      justify-content: flex-start
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .input_box2 .form-check {
+      margin-right: 20px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_vs_fixed_rate_mortage .main_table_area {
+      width: 100%
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_payment_schedule {
+      overflow-x: scroll
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_payment_schedule .main_nasted_table_wrapper {
+      width: 1000px
+   }
+
+   #arm_fixed_rate_calculator {
+      padding: 30px 0
+   }
+
+   #arm_fixed_rate_calculator .top_area_page_title h3 {
+      font-size: 20px
+   }
+
+   #arm_fixed_rate_calculator .top_area_page_title p {
+      font-size: 14px;
+      line-height: 24px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_result_summary .result_summary_main_table {
+      overflow-x: scroll
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_result_summary .result_summary_main_table table {
+      width: 1000px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_left_panel .form_box .form_input_box .label_box {
+      margin-bottom: 10px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_char_area .main_char_canvas #arm_fixe_chart_canvas {
+      height: 300px
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel {
+      padding-left: 0
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_vs_fixed_rate_mortage .main_table_area {
+      overflow-x: scroll
+   }
+
+   #arm_fixed_rate_calculator .arm_fixed_rate_wrapper .arm_fixed_right_panel .arm_vs_fixed_rate_mortage .main_table_area table {
+      width: 600px
+   }
+}
